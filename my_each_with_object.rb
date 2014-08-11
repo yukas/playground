@@ -1,6 +1,8 @@
 # Practice with Enumerator and Enumerable
 require "./setup"
 
+require "minitest/autorun"
+
 module Enumerable
   def my_each_with_object(memo, &block)
     each do |elem|
