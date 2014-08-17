@@ -1,4 +1,4 @@
-require "./setup"
+require "../setup"
 
 module Hooks
   def included(base)

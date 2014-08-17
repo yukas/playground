@@ -1,4 +1,4 @@
-require "./setup"
+require "../setup"
 
 class User
   def name

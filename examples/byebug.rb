@@ -1,4 +1,4 @@
-require "./setup"
+require "../setup"
 require "byebug"
 
 puts "A"
