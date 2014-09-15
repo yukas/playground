@@ -1,5 +1,5 @@
 # Practice with Enumerator and Enumerable
-require "./setup"
+require "../setup"
 
 require "minitest/autorun"
 

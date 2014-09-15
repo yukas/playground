@@ -1,15 +1,5 @@
 require "curses"
 
-begin
-  Curses.init_screen
-  Curses.crmode
-  
-rescue
-  Curses.close_screen
-  setpos(10, 10)
-end
-
-
 def show_message(message)
   width = message.length + 6
   win = Window.new(5, width,
@@ -25,7 +15,6 @@ end
 
 begin
   crmode
-#  show_message("Hit any key")
   setpos((lines - 5) / 2, (cols - 10) / 2)
   addstr("Hit any key")
   refresh

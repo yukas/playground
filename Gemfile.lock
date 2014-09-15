@@ -6,11 +6,19 @@ GEM
       debugger-linecache (~> 1.2)
     columnize (0.8.9)
     debugger-linecache (1.2.0)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    highline (1.6.21)
     minitest (5.4.0)
+    multipart-post (2.0.0)
+    ruby-opencv (0.0.13)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   byebug
+  faraday
+  highline
   minitest
+  ruby-opencv
