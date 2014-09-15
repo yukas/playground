@@ -1,0 +1,19 @@
+<%= form_for @father do |f| %>
+  <p>
+    <%= f.label :name, 'Name:' %>
+    <%= f.text_field :name %>
+  </p>
+  
+  <p>Sons:</p>
+  
+  <%= f.fields_for :sons do |ff| %>
+    <p>
+      <%= ff.label :name, "Son ##{ff.index} name:" %>
+      <%= ff.text_field :name %>
+      <%= ff.check_box '_destroy' %>
+    </p>
+  <% end %>
+  
+  <%= f.submit %>
+<% end %>
+

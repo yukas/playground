@@ -1,0 +1,10 @@
+<h1>All fathers</h1>
+<% @fathers.each do |father| %>
+  <p>
+    <%= father.name %> (Sons: <%= father.sons.inspect %>)
+    <%= link_to 'Edit', edit_father_path(father) %>
+    <%= link_to 'Destroy', father_path(father), method: :delete %>
+  </p>
+<% end %>
+
+<%= link_to 'New father', new_father_path %>
